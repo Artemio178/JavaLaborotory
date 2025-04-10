@@ -1,0 +1,26 @@
+# Файл зависимостей для проекта "Tender Specs Bot"
+
+# --- Веб-скрапинг и парсинг HTML ---
+requests           # Для скачивания веб-страниц
+beautifulsoup4     # Основной парсер HTML
+lxml               # Альтернативный, часто более быстрый HTML-парсер для BeautifulSoup (рекомендуется)
+
+# --- Обработка данных ---
+pandas             # Для работы с датафреймами (CSV)
+
+# --- Обработка Естественного Языка (NLP) ---
+nltk               # Токенизация, стоп-слова
+pymorphy2   # Лемматизация русского языка (версия важна!)
+pymorphy2-dicts-ru # Словари для pymorphy2
+
+# --- Машинное обучение ---
+scikit-learn       # TF-IDF, модели (Ridge, MultiOutputRegressor), метрики, pipeline
+numpy              # Числовые операции (зависимость для pandas и scikit-learn)
+joblib             # Сохранение/загрузка моделей scikit-learn
+
+# --- Telegram Бот ---
+python-telegram-bot # Библиотека для Telegram API (версия соответствует коду бота)
+
+# --- Конфигурация ---
+python-dotenv      # Загрузка переменных окружения из .env файла (для токена)
+undetected_chromedriver
